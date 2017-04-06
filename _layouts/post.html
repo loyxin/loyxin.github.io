@@ -6,7 +6,7 @@ layout: default
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        
+
         <meta name="viewport" content="width=device-width">
 
 <link rel="stylesheet" href="{{ "{{root_url}}/assets/libs/css/galleries.css">
@@ -14,7 +14,7 @@ layout: default
 
     </head>
     <body>
- 
+
 
 
   <!-- Footnotes CSS-->
@@ -49,9 +49,9 @@ layout: default
 
 
           {% if post.categories.size > 0 %}
-     
+
                            &sim; Filed in {% if post.categories.size == 1 %}<i class="fa fa-briefcase"></i>{% endif %}&nbsp;:&nbsp;<span class="post-tags">{% for tag in page.categories %}<a href="{{ site.baseurl }}/writing/category/{{ tag | cgi_encode }}/" data-toggle="tooltip" title="Other posts filed in {{ tag }} category" rel="tag" style="text-shadow: 2px 2px #000000;">{{ tag }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %%}{% endif %}</span>
-                        
+
    </span>
 
                 </div>
@@ -72,9 +72,9 @@ layout: default
                 <br>
 
  {% if site.share %}{% include share.html %}{% endif %}
-                        {% include signoff.html %} 
+                        {% include signoff.html %}
 {% if site.comments %}{% include disqus_comments.html %}{% endif %}
-                        
+
                 <br>
 
                 <ul class="pager">
@@ -93,6 +93,30 @@ layout: default
             </div>
         </div>
     </div>
+<!--comments-->
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://rafrozen.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                                                                         
+                                                                                         
 </article>
 
 <br>
@@ -102,6 +126,3 @@ layout: default
 
 </body>
 </html>
-
-
-

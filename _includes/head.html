@@ -11,10 +11,13 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href=" {{ site.url }}/assets/libs/css/main.css">
+    <!-- feed.xml -->
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="{{ site.url }}/assets/libs/css/bootstrap.min.css">
-   
+
     <!-- Pygments Github CSS -->
     <link rel="stylesheet" href="{{ site.url }}/assets/libs/css/syntax.css">
 

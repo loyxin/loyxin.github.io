@@ -1,13 +1,23 @@
 <!-- Footer -->
 <footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p class="copyright text-muted">{{ "loyxin" }} &copy;  {{ site.time | date: '%Y' }}</p>
+    <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="col-lg-2  col-md-2 col-sm-2  col-xs-2 ">
+                  {% include links.html %}
+        </div>
+            <div class="col-lg-10  col-md-10 col-sm-10  col-xs-10">
+                <p class="copyright text-muted">{{ "loyxin" }} &copy;  {{ site.time | date: '%Y' }}  <a aria-label="Use the RSS to get updated" title="Register for my RSS" target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></p>
+
+<center><h6><p>Contact me <a href="https://github.com/rafrozen">Github</a> Email: luox46@mail2.sysu.cn  </p></h6></center>
+
+
 <center><h6><p>Powered by <a href="https://github.com/">Github</a> - <a href="https://github.com/jekyll/">Jekyll</a> - <a href="https://github.com/madforjekyll/madforjekyll.github.io">MAD4Jekyll</a>.</p></h6></center>
-            </div>
+
+         </div>
+
         </div>
     </div>
+
 </footer>
 
 <!-- jQuery -->

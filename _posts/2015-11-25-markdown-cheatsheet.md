@@ -124,7 +124,7 @@ ___
 
 ### Image
 
-![Spectrocat](http://octodex.github.com/images/spectrocat.png)
+![Spectrocat](http://tse1.mm.bing.net/th?id=OIP.Mp2bUD7_6ZG418SbUnprpwCKDI&pid=15.1)
 
 <br>
 
