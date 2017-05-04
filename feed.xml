@@ -14,7 +14,11 @@ layout: null
     {% for post in site.posts limit:10 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
+<<<<<<< HEAD
         <description>{{ post.excerpt | remove: '<p>' | remove: '</p>' | xml_escape }}</description>
+=======
+        <description>{{ post.content | xml_escape | strip_html | truncatewords:100 }}</description>
+>>>>>>> dba047bafab8e7a2338f6a0162db352514cbc63b
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
         <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>

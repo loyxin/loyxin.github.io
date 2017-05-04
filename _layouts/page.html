@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<<<<<<< HEAD
 <div class="page clearfix" post>
     <div class="left">
         <h1>{{page.title}}</h1>
@@ -26,3 +27,30 @@ layout: default
     </div>
 </div>
 <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+=======
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <center><h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1> </center>
+                    <hr class="small">
+                    <span class="subheading">{{ page.description }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			{{ content }}
+		</div>
+	</div>
+</div>
+
+<br>
+>>>>>>> dba047bafab8e7a2338f6a0162db352514cbc63b
