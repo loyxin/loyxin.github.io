@@ -1,15 +1,10 @@
-<<<<<<< HEAD
 # Welcome to Jekyll!
-=======
-achieve# Welcome to Jekyll!
->>>>>>> dba047bafab8e7a2338f6a0162db352514cbc63b
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-<<<<<<< HEAD
 # Site settings
 title: loyxin
 brief-intro: Lost in physics
@@ -63,81 +58,3 @@ excerpt_separator: "\n\n\n\n"
 # paginate
 gems: [jekyll-paginate]
 paginate: 6
-=======
-
-# Site settings
-title: loyxin
-description: waiting for you
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://rafrozen.cn"
-permalink: "/achieve/:title/"
-
-
-# Social networking links used in footer. Update and remove as you like.
-github_username: rafrozen
-email: rafrozenluoxin@gmail.com
-# twitter_username:
-# facebook_username:
-#
-# deviantart_username:
-# 500px_username:
-# flickr_username:
-# instagram_username:
-# linkedIn_username:
-
-
-
-# Analytics and webmaster tools stuff goes here
-google_analytics:   UA-96907078-1
-google_verify: google0dc287dfe35853fc.html
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify: 5A2815C4491757B7212F135D94081DEE
-
-
-# Files
-pagesdir: pages
-assets:
-  libs: assets/libs
-  owner: assets/owner
-logo: logo.png
-
-search: true
-share: true
-comments: true
-
-# Owner/author information
-owner:
-  name:   loyxin
-  avatar: avatar.jpg
-  # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Waiting For You
-
-
-#dependencies
-# Gems
-gems:
-  - jekyll-paginate
-
-# Build settings
-highlighter:         rouge
-markdown:           kramdown
-kramdown:
-    extensions:
-     - Hard_wrap
-     - no_intra_emphasis
-     - strikethrough
-     - fenced_code_blocks
-     - autolink
-     - tables
-     - with_toc_data
-     - highlight
-     - footnotes
-    input:          GFM
-    syntax_highlighter: rouge
-sass:
-    style:          :compressed
-paginate: 20
-paginate_path: "/achieve/page:num/"
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-slugify: "pretty"
->>>>>>> dba047bafab8e7a2338f6a0162db352514cbc63b
