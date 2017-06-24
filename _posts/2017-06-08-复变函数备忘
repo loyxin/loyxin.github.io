@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "复变函数备忘"
+categories: 数学
+tags:  数学 备忘
+---
+* content
+{:toc}
+
+## 保角映射
+
+夹角不变,方向变. 第二类保角
+
+$$
+\omega = \frac{a z + b}{c z + d} \LeftRightarrow a b - b c > 0
+$$
+
+### 上半平面映射单位园
+$$
+\omega = e^{i \theta} \frac{z - a}{z-\bar{a} }
+$$
+
+### 单位圆内部映射单位圆内部
+$$
+\omega = e^{i \theta} \frac{z - a}{1-\bar{a} z}\ | a | < 1
+$$
+
+## 留数
+$$
+\oint f(z)dz = 2\pi i res f(b_k)\\
+Res[f(z),z_0]=\frac{2}{(m-1)!}lim_{z\rightarrow z_0} \frac{d^{m-1}}{dz^{m-1}}[(z-z_0)^mf(z)]
+\\ Res[f(z),\infty ]=-Res[\frac{1}{z^2}f(\frac{1}{z}),0]
+$$
