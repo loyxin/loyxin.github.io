@@ -142,4 +142,4 @@ logicVolWithField//you volume
 ->SetFieldManager(localFieldMgr, allLocal);
 ```
 
-敏感探测器在保存数据章节介绍
+敏感探测器在[敏感探测器章节]({{ site.url }}/2017/09/11/geant4-敏感探测器/)介绍
