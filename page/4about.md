@@ -19,7 +19,7 @@ type: page
 ## 联系我
 
 * GitHub：[rafrozen](https://github.com/rafrozen)
-* email：luox46@mail2.sysu.edu.cn or rafrozenluoxin@gmail.com
+* email： rafrozenluoxin@gmail.com
 
 ## 友情链接
 

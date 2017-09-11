@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  " Linux GRUB 引导Win 10"
-categories: 备忘
+categories: grub
 tags: boot 备忘
+author: loyxin
 ---
 
 
