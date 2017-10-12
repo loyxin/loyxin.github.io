@@ -24,6 +24,3 @@ type: page
 
 [彩虹霓墙](http://luoml.xyz)
 
-## Comments
-
-{% include comments.html %}

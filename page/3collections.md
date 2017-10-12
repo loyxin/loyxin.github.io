@@ -36,7 +36,6 @@ type: page
 [gcc](http://ow3kig4i4.bkt.clouddn.com/reference/gcc.pdf)
 
 [gdb](http://ow3kig4i4.bkt.clouddn.com/reference/gdb.pdf)
-{% include comments.html %}
 
 - 电路的参考
 [电路分析总结](http://www.doc88.com/p-6951840354442.html)
@@ -47,3 +46,4 @@ type: page
 
 [数电学习心得报告](http://www.doc88.com/p-9919429220218.html)
 
+[矩阵函数参考](http://ow3kig4i4.bkt.clouddn.com/blog/pdf/matrix_cookbook.pdf)
