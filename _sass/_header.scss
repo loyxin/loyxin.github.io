@@ -9,7 +9,7 @@ header {
         -webkit-transition: 0.2s ease;
         transition: 0.2s ease;
         &:hover {
-            color: #fff;
+            color: #A391EA;
         }
     }
     .wrapper {
@@ -42,17 +42,9 @@ header {
                         display: inline-block;
                         padding: 0 10px;
                         height: 52px;
-                        &:hover {
-                            background-color: #000;
-                        }
                         i {
                             margin-right: 5px;
                         }
-                    }
-                    >.active {
-                        color: #fff;
-                        background-color: #000;
-                        box-shadow: 0 25px 25px -15px rgba(255,255,255,0.93);
                     }
                 }
             }
@@ -123,10 +115,6 @@ header {
                 -webkit-transition: 0.4s ease;
                 transition: 0.4s ease;
             }
-            >.active{
-                background: #000;
-                color: #fff;
-            }
             .nav-show{
                 visibility: visible;
                 transform: scale(1);
@@ -160,11 +148,6 @@ header {
                         }
                         &:last-of-type{
                             border: none;
-                        }
-                        >.active {
-                            color: #fff;
-                            background-color: #000;
-                            box-shadow: none;
                         }
                     }
                 }

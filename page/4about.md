@@ -2,7 +2,6 @@
 layout: page
 title: About
 permalink: /about/
-icon: heart
 type: page
 ---
 
@@ -24,3 +23,4 @@ type: page
 
 [彩虹霓墙](http://luoml.xyz)
 
+[网站feed](../feed.xml)

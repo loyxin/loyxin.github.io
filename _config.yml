@@ -13,16 +13,10 @@ url: "https://rafrozen.cn" # the base hostname & protocol for your site
 permalink: /:year/:month/:day/:title/
 
 # other links
-# twitter_username: gaohaoyang126
-# facebook_username: gaohaoyang.water
+
 github_username:  rafrozen
 email: luox46@mail2.sysu.edu.cn
-# weibo_username: 3115521wh
-# # zhihu_username: gaohaoyang
-# linkedIn_username: gaohaoyang
-# dribbble_username:
 
-description_footer: 特工
 
 # comments
 # two ways to comment, only choose one, and use your own short name
@@ -58,6 +52,5 @@ excerpt_separator: "\n\n\n\n"
 # paginate
 plugins: 
 - jekyll-paginate
-- jekyll-mermaid
 
 paginate: 6
