@@ -46,3 +46,5 @@ type: page
 [数电学习心得报告](http://www.doc88.com/p-9919429220218.html)
 
 [矩阵函数参考](http://ow3kig4i4.bkt.clouddn.com/blog/pdf/matrix_cookbook.pdf)
+
+[端口查询](http://tool.oschina.net/commons?type=7)

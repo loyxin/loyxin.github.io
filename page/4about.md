@@ -22,5 +22,3 @@ type: page
 ## 友情链接
 
 [彩虹霓墙](http://luoml.xyz)
-
-[网站feed](../feed.xml)
