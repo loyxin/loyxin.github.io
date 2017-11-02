@@ -36,6 +36,9 @@ type: page
 
 [gdb](http://ow3kig4i4.bkt.clouddn.com/reference/gdb.pdf)
 
+[how-to-write-makefile ](http://ow3kig4i4.bkt.clouddn.com/reference/how-to-write-makefile.pdf)
+
+[mastering-cmake](https://github.com/Akagi201/learning-cmake/blob/master/docs/mastering-cmake.pdf)
 - 电路的参考
 [电路分析总结](http://www.doc88.com/p-6951840354442.html)
 
