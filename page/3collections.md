@@ -16,6 +16,12 @@ type: page
 
 [multi cloud](https://www.multcloud.com/home#add_drive)
 
+[一键化打造Vim IDE环境(安装只需数秒) linux 64位环境](https://github.com/BillWang139967/Vim)
+
+A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.
+
+[内网代理frp](https://github.com/fatedier/frp)
+
 - 英语
 
 [test vocab](http://testyourvocab.com/)
@@ -39,7 +45,9 @@ type: page
 [how-to-write-makefile ](http://ow3kig4i4.bkt.clouddn.com/reference/how-to-write-makefile.pdf)
 
 [mastering-cmake](https://github.com/Akagi201/learning-cmake/blob/master/docs/mastering-cmake.pdf)
+
 - 电路的参考
+
 [电路分析总结](http://www.doc88.com/p-6951840354442.html)
 
 [模电总结复习资料](https://wenku.baidu.com/view/f8fdd6b8a0116c175f0e4859.html)
