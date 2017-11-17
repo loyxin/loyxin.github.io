@@ -53,4 +53,9 @@
   </script>
 {% endif %}
 
+{% if page.mermaid %}
+<script src="/js/mermaid.min.js"></script>
+<link rel="stylesheet" href="/js/mermaid.css">
+<script>mermaid.initialize({startOnLoad:true});</script>
+{% endif %}
 </head>

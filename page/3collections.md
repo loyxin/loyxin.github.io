@@ -22,6 +22,8 @@ A fast reverse proxy to help you expose a local server behind a NAT or firewall 
 
 [内网代理frp](https://github.com/fatedier/frp)
 
+[网站测速google](https://developers.google.com/speed/pagespeed/insights/)
+
 - 英语
 
 [test vocab](http://testyourvocab.com/)
