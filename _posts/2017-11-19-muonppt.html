@@ -1,0 +1,180 @@
+---
+layout: presentation
+title: muon展示
+permalink: /muonpre/
+---
+
+
+count: false
+class: center, middle, inverse
+
+# 粒子探测器模拟
+
+.date[2017-11-27]
+
+.author[罗鑫]
+
+.footnote[SYSU]
+
+---
+
+class:right,middle, inverse
+count:false
+## Geant4 介绍
+
+---
+
+#### Geant4
+
+Geant4是欧洲核子中心(CERN)新近研制开发的一个大型高能物理探测器模拟程序，是采用C++语言编写的。该软件包提供了高能物理模拟实验探测器的必要工具，利用探测器几何结构的相关类，用户能够精确地定义复杂探测器的材料和几何结构，利用物理过程的相关类，通过对不同粒子注册相关的物理过程，用户能够模拟所有己知的粒子与探测器介质之间的各种可能的相互作用，同时可以用不同可视化引擎查看探测器的几何结构以及粒子在探测器中的径迹，方便初学者了解探测器模拟。同时用户可以定义不同的“动作”(Action)类来控制模拟过程相应的层面的行为或者输出所产生的数据。
+
+[Geant网站](http://geant4.cern.ch/) http://geant4.cern.ch/
+
+![Geant4 应用](http://ow3kig4i4.bkt.clouddn.com/muon/geant4_app.png)
+
+
+---
+
+class:right,middle, inverse
+count:false
+## 缪子简介
+
+---
+
+缪子是一种类似电子的基本粒子，它带有一个单位负电荷，自旋为$\frac{1}{2}$，但是相比电子质量更大，为$105. 658MeV/c^2$，是电子的207倍重，被分类为轻子。和其他轻子一样，缪子被认为没有子结构。缪子的反粒子为$\mu^+$，带有一个单位正电荷。缪子的平均寿命约为$2.2\mu s$, 准确值为 $2.1969811(22)×10^{−6} s$，缪子的衰变方式: 
+
+<div>
+$$
+\mu^- \rightarrow e^- + \nu_\mu + \bar\nu_e \\\
+\mu^+ \rightarrow e^+ + \bar\nu_\mu + \nu_e
+$$
+</div>
+
+到达地球表面的缪子绝大部分不是来自宇宙射线，而是由宇宙射线中高能质子撞击大气层顶部产生 $\pi$ 介子，然后 $\pi$ 介子会在传输较短的距离后衰变，产生缪子(<text>$\pi^- \rightarrow \mu^- + \bar\nu\_u ,\pi^+\rightarrow \mu^+ + \nu\_\mu$</text>)。如果不考虑相对论效应，这些缪子的寿命大约能够支持传输468米($2.197 \mu s×ln(2) \times 0.9997\times c$)，但是由于相对论效应的时钟变慢效应，这些缪子就能够达到地球表面。
+
+---
+
+### 符合法测量宇生缪子
+
+由于缪子在塑料闪烁体有能损，会以光子形式放出，光电倍增管此时产生的信号就是粒子的“到达”探测器的信号，缪子衰变产生的电子继续与塑料闪烁体发生作用能损，放出光子，光电倍增管产生了缪子“衰变”的信号。“到达”探测器的信号与缪子“衰变”的信号的时间间隔, 即为缪子一次衰变的寿命。假如两块塑料闪烁体产生的，“到达”探测器的信号近似相等，并且第二块塑料闪烁体产生了“衰变”的信号，我们就认为该粒子是缪子，并且发生衰变，对其他的信号舍弃，排除了其他粒子的干扰。
+
+---
+
+class:right,middle, inverse
+count:false
+
+## 缪子探测器模拟程序
+
+---
+
+我们设计基于Geant4的缪子探测器模拟程序，包括了初级事例的产生，探测器几何信息，入射粒子的物理过程，击中信息及其数字化，模拟事例的输出。下图是我们设计的程序的整体结构
+
+<img src="http://ow3kig4i4.bkt.clouddn.com/muon/main.jpg"  width = "1000" height = "500" align = center  />
+
+
+---
+
+### 探测器几何
+
+探测器是一个高338.5mm，下底长143.5mm，上底长84mm，厚度为20mm，材料为蒽，分子式为<nobr>$C_{14}H_{10}$ </nobr> 的梯形结构。探测器会保存缪子到达时间，缪子的位置信息和沉积的能量信息，可以通过缪子的位置信息判断缪子是否衰变。
+
+两块探测器板都覆盖了1mm厚氧化铝的反射层，上底面没有覆盖反射层，所以探测器产生的光子会从上底面射出，记录光子的达到时间以及光子的能量信息
+
+<center>
+<img src="http://ow3kig4i4.bkt.clouddn.com/muon/muonde.png"  width = "500"  align = center  />
+</center>
+
+---
+
+### 运行视频
+ 
+<video width="400" controls="console"> 
+<source src="http://ow3kig4i4.bkt.clouddn.com/muon/run.mkv"/>
+</video>
+
+
+---
+
+class:right,middle, inverse
+count:false
+## 模拟结果分析
+
+---
+
+
+测试了厚度都是为20mm的两个探测器的性能，将它们相距10mm，其中包括两个反射层的厚度，入射粒子为$\mu^-$，能量从0.01GeV/10MeV到0.069GeV/69MeV，间隔为1MeV，每个缪子能量都运行了1000个事例。然后计算缪子的穿透距离和沉积能量以及单位距离的沉积能量的平均值和方差。
+
+<img src="http://ow3kig4i4.bkt.clouddn.com/muon/de_distant_dis_10_se_20.jpg"  width = "550" align="right"  />
+
+<img src="http://ow3kig4i4.bkt.clouddn.com/muon/de_en_di_dis_10_se_20.jpg"  width = "400"   />
+
+<img src="http://ow3kig4i4.bkt.clouddn.com/muon/de_en_dis_10_se_20.jpg"  width = "500"   />
+
+---
+
+### 探测器厚度影响
+
+接着我们调整了第二个探测器的厚度分别为10mm，15mm，25mm，30mm，35mm，40mm，60mm
+
+<img src="http://ow3kig4i4.bkt.clouddn.com/muon/quxian.jpg"  width = "500" align="right"  />
+
+<img src="http://ow3kig4i4.bkt.clouddn.com/muon/dis.jpg"  width = "500"   />
+
+拟合公式为 $k\times x + b$，其中$k = 0.000443,b= 0.02799$，R-square：0.9961
+
+---
+
+### 探测器距离的影响
+
+<img src="http://ow3kig4i4.bkt.clouddn.com/muon/dis_all.jpg"  width = "550" align="right"  />
+
+<img src="http://ow3kig4i4.bkt.clouddn.com/muon/en_all.jpg"  width = "400"   />
+
+<img src="http://ow3kig4i4.bkt.clouddn.com/muon/en_dis_all.jpg"  width = "500"   />
+
+---
+
+class:right,middle, inverse
+count:false
+## 缪子寿命统计
+
+---
+
+我们统计了每个事例中的缪子衰变产生的光子射出探测器的平均值，由于缪子达到探测器的时间只有几纳秒，所以我们直接用该时间表示差值，按间隔100ns 统计衰变时间得到如下拟合曲线
+
+<center>
+<img src="http://ow3kig4i4.bkt.clouddn.com/muon/counts.jpg"  width = "600"   />
+</center>
+
+拟合曲线$ a\times exp(-1/b\times x)+c$的参数为
+Coefficients (with 95% confidence bounds):
+
+<div>
+$$
+\begin{align}
+      a  &=  1.783e+04 & (1.777e+04,& 1.789e+04)\\
+       b  &=      2203  &(2189,& 2218)\\
+       c  &=   -10.75  &(-33.95,& 12.45)\\
+\end{align}
+$$
+</div>
+
+其中b就是缪子的寿命，得到精确值为2203.435477，与标准值相差0.2937%
+
+---
+
+## 展望
+
+- 构建PMT结构
+- 模拟光信号转换成电信号
+- 探测器的响应时间
+
+代码下载网站:
+https://github.com/rafrozen/geant4_muon_detector
+
+geant4 编写总结
+https://github.com/rafrozen/geant4_muon_detector/blob/master/doc/geant4.md
+
+muon模拟项目展示网址
+
+http://www.loyxin.xin/muonpre
