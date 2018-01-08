@@ -48,6 +48,8 @@ A fast reverse proxy to help you expose a local server behind a NAT or firewall 
 
 [mastering-cmake](https://github.com/Akagi201/learning-cmake/blob/master/docs/mastering-cmake.pdf)
 
+[ext4 文件系统](http://rick_stone.leanote.com/post/ext4%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84
+
 - 电路的参考
 
 [电路分析总结](http://www.doc88.com/p-6951840354442.html)
