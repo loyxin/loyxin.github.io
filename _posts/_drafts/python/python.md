@@ -20,3 +20,25 @@ not in	| |如果在指定的序列中没有找到值返回 True，否则返回 F
 is| |	is 是判断两个标识符是不是引用自一个对象	x is y, 类似 id(x) == id(y) , 如果引用的是同一个对象则返回 True，否则返回 False
 is not| |	is not 是判断两个标识符是不是引用自不同对象	x is not y ， 类似 id(a) != id(b)。如果引用的不是同一个对象则返回结果 True，否则返回 False。
 
+python 函数的参数传递：
+
+    不可变类型：类似 c++ 的值传递，如 整数、字符串、元组。如fun（a），传递的只是a的值，没有影响a对象本身。比如在 fun（a）内部修改 a 的值，只是修改另一个复制的对象，不会影响 a 本身。
+
+    可变类型：类似 c++ 的引用传递，如 列表，字典。如 fun（la），则是将 la 真正的传过去，修改后fun外部的la也会受影响
+
+python 中一切都是对象，严格意义我们不能说值传递还是引用传递，我们应该说传不可变对象和传可变对象。
+
+
+lambda函数的语法只包含一个语句，如下：
+
+lambda [arg1 [,arg2,.....argn]]:expression
+
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+ 
+# 可写函数说明
+sum = lambda arg1, arg2: arg1 + arg2;
+ 
+# 调用sum函数
+print "相加后的值为 : ", sum( 10, 20 )
+print "相加后的值为 : ", sum( 20, 20 )

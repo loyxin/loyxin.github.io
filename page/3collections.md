@@ -63,3 +63,5 @@ A fast reverse proxy to help you expose a local server behind a NAT or firewall 
 [矩阵函数参考](http://ow3kig4i4.bkt.clouddn.com/blog/pdf/matrix_cookbook.pdf)
 
 [端口查询](http://tool.oschina.net/commons?type=7)
+
+[抽象代数博客](http://www.cnblogs.com/edward-bian/p/4438681.html)
