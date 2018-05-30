@@ -9,7 +9,7 @@
 title: loyxin
 baseurl: "" # the subpath of your site, e.g. /blog
 
-permalink: /:year/:month/:day/:title/
+permalink: :year/:month/:day/:title/
 
 # other links
 
