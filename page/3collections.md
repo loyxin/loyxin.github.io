@@ -24,6 +24,12 @@ A fast reverse proxy to help you expose a local server behind a NAT or firewall 
 
 [网站测速google](https://developers.google.com/speed/pagespeed/insights/)
 
+[LaTeX宏包索引](https://blog.csdn.net/code4101/article/details/78801646)
+
+[CTEX在线文档](http://www.ctex.org/documents/packages/layout/fancyhdr.htm)
+
+[linux命令搜索](http://jaywcjlove.gitee.io/linux-command/)
+
 - 英语
 
 [test vocab](http://testyourvocab.com/)
