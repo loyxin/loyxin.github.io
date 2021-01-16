@@ -104,6 +104,7 @@
       ctx.restore();	
     };	
     
+         
     
      function render(a){	
       requestAnimationFrame(render);	
@@ -125,7 +126,9 @@
     window.addEventListener("touchmove", onMove);	
     window.addEventListener("resize", onResize);	
     requestAnimationFrame(render);	
-    
+    window.onload=function starttime(){	
+obj.innerHTML="Love";
+}
     </script>	
     
      </body>	
