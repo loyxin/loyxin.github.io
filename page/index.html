@@ -27,12 +27,16 @@
     }	
     </style>	
     
-     </head>	
+    </head>	
     <body>	
-    <h1 id="h1">重要的东西，眼睛是看不见的，要用心去守护</h1>	
+    <h1 id="h1">重要的东西，眼睛是看不见的，要用心去守护</h1>
+    <video playsinline autoplay muted loop width='300'  id="bgvid">
+    <source src="http://qonfeiwat.hn-bkt.clouddn.com/LJNN0695.MP4?e=1613529715&token=iW1FgllSYMlINpN7sn9rfGYfkAoSQYt9eQqhQcf4:GBzzmLcNMo6ty8ldRyJOsYb6ZFs=" type="video/mp4"> 
+    </video>
+    
     <canvas></canvas> <!--canvas 画布-->	
     
-     <script>	
+    <script>	
     var canvas = document.querySelector("canvas"),	
       ctx = canvas.getContext("2d");	
     
@@ -43,11 +47,11 @@
       wh = canvas.height = window.innerHeight;	
     }	
     
-     ctx.strokeStyle = "red";	
+    ctx.strokeStyle = "red";	
     ctx.shadowBlur = 25;	
     ctx.shadowColor = "hsla(0, 100%, 60%,0.5)";	
     
-     var precision = 100;	
+    var precision = 100;	
     var hearts = [];	
     var mouseMoved = false;	
     function onMove(e){	
@@ -121,7 +125,7 @@
     }	
     
     
-     onResize();	
+    onResize();	
     window.addEventListener("mousemove", onMove);	
     window.addEventListener("touchmove", onMove);	
     window.addEventListener("resize", onResize);	
@@ -129,5 +133,5 @@
 
     </script>	
     
-     </body>	
+    </body>	
     </html> -->
