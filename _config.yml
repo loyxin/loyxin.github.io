@@ -7,8 +7,8 @@
 
 # Site settings
 title: loyxin
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.loy.xin" # the base hostname & protocol for your site
+baseurl: "https://www.loy.xin" # the subpath of your site, e.g. /blog
+url: "www.loy.xin" # the base hostname & protocol for your site
 
 permalink: :year/:month/:day/:title/
 
